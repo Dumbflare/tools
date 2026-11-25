@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6821f">
+  <meta name="description" content="A free, privacy-first collection of handy developer tools. Runs in your browser.">
+  <title>Dumbflare Tools — handy tools, no fuss</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Dumbflare Tools home">
+      <img src="favicon.png" alt="" width="34" height="34">
+      <span>Dumbflare <b>Tools</b></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#tools">All tools</a>
+      <a href="#about">Privacy</a>
+      <a class="github-link" href="https://github.com/Dumbflare/tools" target="_blank" rel="noreferrer">Open source ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="pulse"></span> YOUR EVERYDAY TOOLKIT</p>
+        <h1>Small tools.<br><span>Big brain energy.</span></h1>
+        <p class="hero-copy">The little utilities you need, right when you need them. Free, fast, and private by design.</p>
+        <a class="hero-cta" href="#tools">Explore all tools <span aria-hidden="true">↓</span></a>
+        <div class="hero-sticker" aria-hidden="true"><span>100%</span><br>browser<br>powered</div>
+      </div>
+      <div class="hero-cloud cloud-one" aria-hidden="true"></div>
+      <div class="hero-cloud cloud-two" aria-hidden="true"></div>
+      <div class="hero-squiggle" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="privacy-strip" id="about">
+      <div class="privacy-icon" aria-hidden="true">⌁</div>
+      <div><strong>Your data stays yours.</strong><p>Tools run in your browser. Nothing you enter is uploaded or saved by Dumbflare.</p></div>
+      <span class="privacy-badge">LOCAL BY DEFAULT</span>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE TOOLBOX</p><h2>What can we help with?</h2></div>
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a tool..." autocomplete="off" aria-label="Search tools"><kbd>/</kbd></label>
+      </div>
+      <div id="categoryFilters" class="category-filters" aria-label="Filter by category"></div>
+      <div id="toolGrid" class="tool-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No tools match that search. Try another word.</p>
+    </section>
+
+    <section class="bottom-note">
+      <span class="note-sparkle" aria-hidden="true">✳</span>
+      <div><h2>Made for the “there’s gotta be a tool for that” moments.</h2><p>No account. No fuss. Just get it done.</p></div>
+      <a href="#tools">Back to tools ↑</a>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><img src="favicon.png" alt="" width="24" height="24"><span>Dumbflare <b>Tools</b></span></a><span>Made to be useful. Built to be private.</span></footer>
+</body>
+</html>
